@@ -1,6 +1,9 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useState} from 'react'
 
 const inputTodo=()=> {
+
+    const [description, setDescription] = useState("");
+
     return (
        <Fragment>
            <h1 className="text-center mt-5">
