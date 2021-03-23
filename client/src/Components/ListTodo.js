@@ -1,6 +1,22 @@
 import React, { Fragment, useEffect, useState } from 'react'
 
 function ListTodo() {
+
+    const getTodos = async() => {
+        try{
+
+            const response = await fetch("http://localhost:5000/todos")
+
+
+        }
+        catch(err){
+            console.error(err.message)
+        }
+    }
+
+    useEffect(() => {
+        getTodos();
+    })
     return (
         <Fragment>
             <table class="table mt-5 text-center">
