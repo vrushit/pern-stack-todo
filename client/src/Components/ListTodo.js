@@ -35,6 +35,14 @@ function ListTodo() {
     </thead>
     <tbody>
         
+        {todos.map(todo => (
+            <tr>
+                <td>{todo.description}</td>
+                <td>Edit</td>
+                <td></td>
+
+            </tr>
+        ))}
       {/* <tr>
         <td>John</td>
         <td>Doe</td>
