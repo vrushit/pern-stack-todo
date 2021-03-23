@@ -1,6 +1,8 @@
-import React, { Fragment } from 'react'
+import React, { Fragment , useState} from 'react'
 
-function EditTodo() {
+function EditTodo({todo}) {
+
+    const [description, setDescription]=useState(todo.descrpition);
     return (
         <Fragment>
 <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
