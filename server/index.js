@@ -59,6 +59,15 @@ app.get("/todos/:id", async(req, res)=>{
 
 //Update a Todo
 
+app.put("/todos/:id", async(req, res) => {
+    try{
+        
+    }
+    catch(err){
+        console.error(err.message)
+    }
+})
+
 //Delete a Todo
 
 
