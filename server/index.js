@@ -16,7 +16,7 @@ app.post("/todos", async(req, res)=>{
     // async await
     try{
 
-console.log(req.body)
+
 
     }
     catch(err){
