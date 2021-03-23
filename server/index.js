@@ -12,6 +12,14 @@ app.use(express.json())
 
 //Create a todo
 
+app.post("/todos", async(req, res)=>{
+    // async await
+    try{}
+    catch(err){
+        console.log(err.message)
+    }
+})
+
 //Fetch All todo
 
 
