@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from 'react'
 
-const inputTodo=()=> {
+function InputTodo () {
 
     const [description, setDescription] = useState("");
 
@@ -17,4 +17,4 @@ const inputTodo=()=> {
     )
 }
 
-export default inputTodo
+export default InputTodo;
