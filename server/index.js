@@ -26,12 +26,19 @@ app.post("/todos", async(req, res)=>{
 
     }
     catch(err){
-        console.log(err.message)
+        console.error(err.message)
     }
 })
 
 //Fetch All todo
+app.get("/todos", (req, res) => {
+    try{
 
+    }
+    catch(err){
+            console.error(err.message)
+    }
+})
 
 //Fetch a Todo
 
