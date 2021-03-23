@@ -2,8 +2,7 @@ import React, { Fragment , useState} from 'react'
 
 function EditTodo({todo}) {
 
-    //update Descrption
-
+    //update Descrptio
     const updateDescription = async(e) =>{
         e.preventDefault();
         try{
@@ -32,7 +31,6 @@ window.location ="/";
 <div class="modal" id={`id${todo.todo_id}`} onClick={() => {setDescription(todo.description)}}>
   <div class="modal-dialog">
     <div class="modal-content">
-
       <div class="modal-header">
         <h4 class="modal-title">Edit Todo</h4>
         <button type="button" class="close" data-dismiss="modal" onClick={() => {setDescription(todo.description)}}>&times;</button>
