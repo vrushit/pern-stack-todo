@@ -39,7 +39,7 @@ function ListTodo() {
             <tr>
                 <td>{todo.description}</td>
                 <td>Edit</td>
-                <td></td>
+                <td><button className="btn btn-danger">Delete</button></td>
 
             </tr>
         ))}
