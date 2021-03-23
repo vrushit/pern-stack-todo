@@ -47,9 +47,12 @@ app.get("/todos", async(req, res) => {
 app.get("/todos/:id", async(req, res)=>{
     try{
 
+        const {id}= req.params;
+        const todo = await pool.query("SELECT * FROM todo WHERE ")
+
     }
     catch(err){
-        console.error(err.message)
+        console.error(err.message);
     }
 })
 
