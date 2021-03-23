@@ -47,7 +47,7 @@ window.location ="/";
       onClick={e => updateDescription(e)}
       >Edit</button>
 
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" onClick={() => {setDescription(todo.description)}}>Close</button>
       </div>
 
     </div>
