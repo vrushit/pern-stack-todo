@@ -2,6 +2,18 @@ import React, { Fragment , useState} from 'react'
 
 function EditTodo({todo}) {
 
+    //update Descrption
+
+    const updateDescription = async(e) =>{
+        e.preventDefault();
+        try{
+
+        }
+        catch(err){
+            console.error(err.message);
+        }
+    }
+
     const [description, setDescription]=useState(todo.description);
     return (
         <Fragment>
@@ -19,11 +31,13 @@ function EditTodo({todo}) {
       </div>
 
       <div class="modal-body">
-        <input type="text" className="form-control" value={description}/>
+        <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)}/>
       </div>
 
       <div class="modal-footer">
-      <button type="button" class="btn btn-warning" data-dismiss="modal">Edit</button>
+      <button type="button" class="btn btn-warning" data-dismiss="modal"
+      onClick={e => updateDescription(e)}
+      >Edit</button>
 
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
