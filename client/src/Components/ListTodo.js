@@ -26,10 +26,10 @@ function ListTodo() {
 
             const deleteTodo = await fetch(`http://localhost:5000/todos/${id}`, {
                 method:"DELETE",
-                
+
             });
 
-
+            setTodos(todos.filter(todo => todo.todo_id !== id))
         }
         catch(err)
         {
