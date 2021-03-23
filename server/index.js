@@ -6,7 +6,7 @@ const pool = require("./db");
 
 //middleware
 app.use(cors());
-app.use(express.json())
+app.use(express.json());
 
 //Routes///
 
@@ -14,7 +14,11 @@ app.use(express.json())
 
 app.post("/todos", async(req, res)=>{
     // async await
-    try{}
+    try{
+
+console.log(req.body)
+
+    }
     catch(err){
         console.log(err.message)
     }
