@@ -1,32 +1,24 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 
 function ListTodo() {
     return (
         <Fragment>
-            <table class="table">
+            <table class="table mt-5 text-center">
     <thead>
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th>Description</th>
+        <th>Edit</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+        
+      {/* <tr>
         <td>John</td>
         <td>Doe</td>
         <td>john@example.com</td>
-      </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
+      </tr> */}
+      
     </tbody>
   </table>
         </Fragment>
