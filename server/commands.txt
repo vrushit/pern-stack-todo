@@ -1,0 +1,4 @@
+\l 
+\c = check the database
+\dt = check the tables inside databsse
+\q = exit from the database
